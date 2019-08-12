@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/time/')
+@app.route('/<time>/')
 def get_epoch():
 	epoch_time = int(time.time())
 	return epoch_time
